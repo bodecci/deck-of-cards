@@ -13,8 +13,11 @@ func main() {
 	// greeting := "Hi there!"
 	// fmt.Println([]byte(greeting))
 
-	cards := newDeck()
-	// fmt.Println(cards.toString())
-	cards.saveToFile("my_cards")
+	// cards := newDeck()
+	// // fmt.Println(cards.toString())
+	// cards.saveToFile("my_cards")
+
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 
 }
